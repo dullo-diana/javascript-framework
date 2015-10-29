@@ -1,0 +1,389 @@
+#tommyDiv
+{
+    position:absolute;
+    left: 50%;
+    top: 200px;
+    width: 400px;
+    transform: translate(-50%, 0);
+}
+
+#startLabel
+{
+  position: absolute;
+  display: none;
+  left: 50%;
+  top: 200px;
+  width: 300px;
+  transform: translate(-50%, 0);
+}
+
+#easyLabel
+{
+  position: absolute;
+  display: none;
+  left: 50%;
+  top: 200px;
+  width: 300px;
+  transform: translate(-50%, 0);
+}
+
+
+/******************** PARTY BUTTON ****************************/
+#animated-party
+{
+  background: rgb(95, 95, 95);
+  display: none;
+  color: white;
+  padding: 1% 3% 1% 3%;
+  border: none;
+  margin-left: 100px;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+/******************************************************/
+
+/**************SNOW BUTTON**********************/
+
+#animated-snow
+{
+  background: rgb(159, 204, 231);
+  display: none;
+  color: white;
+  padding: 1% 3% 1% 3%;
+  border: none;
+  margin-left: 100px;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes wiggle {
+    0% { -webkit-transform: skewX(9deg); }
+    10% { -webkit-transform: skewX(-8deg); }
+    20% { -webkit-transform: skewX(7deg); }
+    30% { -webkit-transform: skewX(-6deg); }
+    40% { -webkit-transform: skewX(5deg); }
+    50% { -webkit-transform: skewX(-4deg); }
+    60% { -webkit-transform: skewX(3deg); }
+    70% { -webkit-transform: skewX(-2deg); }
+    80% { -webkit-transform: skewX(1deg); }
+    90% { -webkit-transform: skewX(0deg); }
+    100% { -webkit-transform: skewX(0deg); }
+}
+@keyframes wiggle {
+    0% { transform: skewX(9deg); }
+    10% { transform: skewX(-8deg); }
+    20% { transform: skewX(7deg); }
+    30% { transform: skewX(-6deg); }
+    40% { transform: skewX(5deg); }
+    50% { transform: skewX(-4deg); }
+    60% { transform: skewX(3deg); }
+    70% { transform: skewX(-2deg); }
+    80% { transform: skewX(1deg); }
+    90% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }
+}
+.wiggle {
+    -webkit-animation-name: wiggle;
+    animation-name: wiggle;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+.animated.wiggle {
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+}
+
+/******************************************************/
+
+
+/******************CANDLE BUTTON************************/
+
+#animated-candle
+{
+  background: rgb(250, 150, 89);
+  display: none;
+  color: white;
+  padding: 1% 3% 1% 3%;
+  border: none;
+  margin-left: 100px;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes rotateIn {
+    0% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: rotate(-200deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: rotate(0);
+        opacity: 1;
+    }
+}
+@keyframes rotateIn {
+    0% {
+        transform-origin: center center;
+        transform: rotate(-200deg);
+        opacity: 0;
+    }
+    100% {
+        transform-origin: center center;
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+.rotateIn {
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+}
+/******************************************************/
+
+/******************IFRAME BUTTON**********************/
+
+#animated-iframe
+{
+  background: rgb(249, 121, 121);
+  display: none;
+  color: white;
+  padding: 1% 3% 1% 3%;
+  border: none;
+  margin-left: 100px;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes flash {
+    0%, 50%, 100% {opacity: 1;}
+    25%, 75% {opacity: 0;}
+}
+@keyframes flash {
+    0%, 50%, 100% {opacity: 1;}
+    25%, 75% {opacity: 0;}
+}
+.flash {
+    -webkit-animation-name: flash;
+    animation-name: flash;
+}
+
+/******************************************************/
+#actionbuttons{margin-top: 13%}
+
+#animated-party:hover{background: rgb(0, 0, 0)}
+#animated-snow:hover{background: rgb(0, 159, 255)}
+#animated-candle:hover{background: rgb(255, 97, 0)}
+#animated-iframe:hover{background: rgb(255, 8, 8)}
+
+@-moz-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-webkit-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 50% {background-color:#b4cfe0;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px; background-color:#6b92b9;}
+}
+
+@-ms-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+
+.tomtom {
+	background-color: #6b92b9;
+	background-image: url('../images/snow.png'), url('../images/snow3.png'), url('../images/snow2.png');
+
+	-webkit-animation: snow 20s linear infinite;
+	-moz-animation: snow 20s linear infinite;
+	-ms-animation: snow 20s linear infinite;
+	animation: snow 20s linear infinite;
+}
+
+
+/***********************CANDLE EFFECT************************/
+
+.candle{
+  display: none;
+  font-size:2em;
+  margin:0 auto;width:8em;height:8em;
+  position: fixed;
+  left: 40%;
+  top: 35%;
+  border-radius:50%/20%;
+  background:#000;
+  background-image:-moz-linear-gradient(-90deg, #555, rgba(255, 255, 255, 0.2));
+  background-image:-webkit-linear-gradient(-90deg, #555, rgba(255, 255, 255, 0.2));
+  background-image:linear-gradient(to bottom, #555, rgba(255, 255, 255, 0.2));
+  box-shadow:
+    0 0.5em 1em 0.5em rgba(0, 0, 0, 0.5),
+    0 -1em 2em rgba(0, 0, 0, 0.9) inset,
+    0em -2em 4em rgba(200,100,0,0.5) inset,
+    0 -4em 2em 1em rgba(200, 120, 0, 0.7) inset,
+    0em 0em 2em rgba(200,200,200,0.5) inset,
+    0 -5.1em 0.3em 0.2em rgba(200, 100, 0, 0.5) inset,
+    0em -0.1em 0.5em rgba(0,0,0,0.9) inset,
+    0 0 0 4em rgba(255, 255, 250, 0.8) inset,
+    0 -6em 2em 0em rgba(50,30,0,0.7),
+    0 0 4em 5em rgba(50,30,0,0.2),
+    0 0 0 0 transparent;
+ }
+
+.candle:before {
+  content:"";
+  display:block;
+  width:20%;
+  height:70%;
+  position:relative;
+  top:-60%;
+  margin:0 auto;
+  border-radius:30% 100% 50% 50% / 60% 60% 60% 60%;
+  box-shadow:
+    0em 2em 1em rgba(255, 255, 0, 0.5) inset,
+    0em 3em 0.5em rgba(250, 100, 50, 0.8) inset,
+    0 0 0.5em 0 rgba(255, 255, 0, 0.7)
+    ;
+  background:transparent;
+  background-image:-moz-linear-gradient(-90deg, transparent,rgba(0,100,100,0.3),transparent);
+  background-image:-webkit-linear-gradient(-90deg, transparent,rgba(0,100,100,0.3),transparent);
+  background-image:linear-gradient(-90deg, transparent,rgba(0,100,100,0.3),transparent);
+  -moz-transform: skewX(0deg) skewY(0deg);
+  -webkit-transform: skewX(0deg) skewY(0deg);
+  transform: skewX(0deg) skewY(0deg);
+  -moz-transform-origin: center bottom;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -moz-animation: air 2s ease-in infinite;
+  -webkit-animation: air 2s ease-in infinite;
+  animation: air 2s ease-in infinite;
+}
+.candle:after{
+  content:"";
+  display:block;
+  width:0.2em;
+  height:1.3em;
+  position:absolute;
+  top:-5%;
+  left:49%;
+  background:#fff;
+  background-image:-moz-linear-gradient(-90deg,#311,#eec 70%,#eec);
+  background-image:-webkit-linear-gradient(-90deg,#311,#eec 70%,#eec);
+  background-image:linear-gradient(to bottom,#311,#eec 70%,#eec);
+}
+
+@-moz-keyframes air{
+  0%{-moz-transform: skewX(0deg) skewY(0deg) scale(1,1);}
+  31%{-moz-transform: skewX(0deg) skewY(0deg) scale(1,1);}
+  32%{-moz-transform: skewX(0deg) skewY(0deg) scale(-1.2,1.5);}
+  33%{-moz-transform: skewX(5deg) skewY(5deg) scale(1,0.9);}
+  34%{-moz-transform: skewX(-1deg) skewY(-1deg) scale(1,1);}
+  36%{-moz-transform: skewX(0deg) skewY(0deg);}
+  98%{-moz-transform: skewX(0deg) skewY(0deg);}
+  99%{-moz-transform: skewX(2deg) skewY(2deg);}
+  100%{-moz-transform: skewX(0deg) skewY(0deg) scale(0.9,1.4);}
+}
+@-webkit-keyframes air{
+  0%{-webkit-transform: skewX(0deg) skewY(0deg) scale(1,1);}
+  31%{-webkit-transform: skewX(0deg) skewY(0deg) scale(1,1);}
+  32%{-webkit-transform: skewX(0deg) skewY(0deg) scale(-1.2,1.5);}
+  33%{-webkit-transform: skewX(5deg) skewY(5deg) scale(1,0.9);}
+  34%{-webkit-transform: skewX(-1deg) skewY(-1deg) scale(1,1);}
+  36%{-webkit-transform: skewX(0deg) skewY(0deg);}
+  98%{-webkit-transform: skewX(0deg) skewY(0deg);}
+  99%{-webkit-transform: skewX(2deg) skewY(2deg);}
+  100%{-webkit-transform: skewX(0deg) skewY(0deg) scale(0.9,1.4);}
+}
+@keyframes air{
+  0%{transform: skewX(0deg) skewY(0deg) scale(1,1);}
+  31%{transform: skewX(0deg) skewY(0deg) scale(1,1);}
+  32%{transform: skewX(0deg) skewY(0deg) scale(-1.2,1.5);}
+  33%{transform: skewX(5deg) skewY(5deg) scale(1,0.9);}
+  34%{transform: skewX(-1deg) skewY(-1deg) scale(1,1);}
+  36%{transform: skewX(0deg) skewY(0deg);}
+  98%{transform: skewX(0deg) skewY(0deg);}
+  99%{transform: skewX(2deg) skewY(2deg);}
+  100%{transform: skewX(0deg) skewY(0deg) scale(0.9,1.4);}
+}
+
+/******************************************************************/
+
+/***************PARTY SECTION****************/
+
+canvas{
+  display:none;
+  position:absolute;
+	left:0;
+	top:0;
+	z-index:0;
+	border:0px solid #000;
+}
+
+/*******************************************/
+
+
+/*********************IFRAME**********************/
+
+#iframe
+{
+  position: absolute;
+  display: none;
+  left: 30%;
+  top: 300px;
+  width: 300px;
+  height: 40px;
+  transform: translate(50%, 0);
+}
+
+iframe{height: 40px;}
+
+/************************************************/

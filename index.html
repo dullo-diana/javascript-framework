@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/framework/tommyframework.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/functions.js"></script>
+</head>
+<body id="tommyBody">
+  <div id="tommyDiv"></div>
+  <div id="iframe">
+    <iframe src="framecontent.html" height="40px"></iframe>
+  </div>
+  <div class="candle"></div>
+  <canvas id="canvas"></canvas>
+  <button type="buton" id="tommyAction" onclick="loadXMLDoc()">MAGIC!</button>
+
+  <div id="actionbuttons">
+    <button type="buton" id="animated-party"  class="animated fadeInLeft" onclick="startParty()">Party</button></br></br>
+    <button type="buton" id="animated-snow"   class="animated wiggle" onclick="startSnow()">Snow</button></br></br>
+    <button type="buton" id="animated-candle" class="animated rotateIn" onclick="startCandle()">Candle</button></br></br>
+    <button type="buton" id="animated-iframe" class="animated flash btnflsh" onclick="iframe()">iFrame</button></br></br>
+  </div>
+
+  <script src="js/iframeload.js"></script>
+</body>
+</html>
